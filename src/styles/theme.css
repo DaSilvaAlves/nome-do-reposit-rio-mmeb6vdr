@@ -1,0 +1,51 @@
+root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --accent: #D4AF37;
+  --font: 'Playfair Display', serif;
+}
+
+body {
+  background-color:(--background);
+  color: var(--foreground);
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h, h4, h5, h6 {
+  font-family: var(--font);
+}
+
+.button {
+  background-color: var(--accent);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--foreground);
+  cursor: pointer;
+  padding: 10px 20px;
+ : background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ffd700;
+}
+
+.card {
+  background-color: var(--background);
+ : 1px solid #ccc;
+  border-radius: 5;
+  margin: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+}
+
+.card:hover {
+ -shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
